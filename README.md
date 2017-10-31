@@ -18,3 +18,14 @@ nsp check (Expected result is: "No known vulnerabilities found")
 
 ## Development Web Server
 Express and BrowserSync will be enough to cover everything we need.
+
+## Remote Web Server
+We can use Now and LocalTunnel to serve our build online
+
+## Build automation
+NPM Scripts covers everything needed for build automation, we can setup a combination of security check, server startup, deployment of the server to the web, linting and testing with NPM Scripts.
+
+## Linting
+ESLint, automated linting on each deployment
+
+## Testing

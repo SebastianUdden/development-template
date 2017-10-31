@@ -5,13 +5,16 @@
 	"scripts": {
 		"start": "node srcServer.js",
 		"predev": "babel-node buildScripts/startMessage.js",
-		"dev": "npm-run-all --parallel security-check open:src lint:watch",
+		"dev": "npm-run-all --parallel security-check open:src lint:watch test:watch",
 		"open:src": "babel-node srcServer.js",
 		"lint": "esw webpack.config.* srcServer.js src buildScripts --color",
 		"lint:watch": "npm run lint -- --watch",
 		"security-check": "nsp check",
 		"localtunnel": "lt --port 3000",
-		"share": "npm-run-all --parallel open:src localtunnel"
+		"share": "npm-run-all --parallel open:src localtunnel",
+		"test": "mocha --reporter progress buildScripts/testSetup.js \"test/**/*.spec.js\"",
+		"test:watch": "npm run test -- --watch",
+		"testLocation": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
 	},
 	"author": "Sebastian Udden",
 	"dependencies": {
