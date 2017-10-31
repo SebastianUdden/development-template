@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/* eslint-disable no-console */
 
 import chalk from 'chalk';
 
