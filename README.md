@@ -29,3 +29,15 @@ NPM Scripts covers everything needed for build automation, we can setup a combin
 ESLint, automated linting on each deployment
 
 ## Testing
+Mocha and JSDOM are great for unit testing through Node. Save testfiles alongside regular files and name them _filename_.test.js
+
+## Tips
+- Put JS in .js file
+- Organize by feature
+- Extract logic into "POJOs"
+- Create a Demo App to show how everything works together
+
+## Production
+- Minification
+- Sourcemaps
+
